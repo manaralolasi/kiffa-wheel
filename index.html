@@ -113,9 +113,6 @@
 </div>
 </div>
 <script>
-if (!window.location.href.includes("checkout")) {
-  document.body.innerHTML = '<h2 style="color:white;text-align:center;margin-top:20%">عجلة الحظ تظهر فقط في صفحة الدفع</h2>';
-} else {
 const options = [{ text: '5% خصم', times: 100, code: 'kiffa981' },
     { text: 'كوب كفة سيراميك', times: 150, code: 'kiffa962' },
     { text: 'ربع كيلو بن مكسيكو', times: 15, code: 'kiffa563' },
@@ -169,7 +166,6 @@ setTimeout(() => {
     usedPhones.push(phone);
     localStorage.setItem('usedPhones_v2', JSON.stringify(usedPhones));
   }
-}
 </script>
 </body>
 </html>
