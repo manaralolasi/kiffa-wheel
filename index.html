@@ -7,6 +7,11 @@
 <title>عجلة كفة</title>
 <style>
     body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow-x: hidden;
+
       font-family: 'Frutiger LT Arabic', sans-serif;
       background-image: url('https://www2.0zz0.com/2025/04/17/07/627371581.png');
       color: white;
@@ -82,6 +87,36 @@
       border-radius: 5px;
       margin-top: 10px;
     }
+
+@media (max-width: 768px) {
+  .wheel {
+    width: 250px;
+    height: 250px;
+  }
+
+  .form-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .form-container h3 {
+    font-size: 16px;
+  }
+
+  .form-container input, .form-container button {
+    font-size: 14px;
+  }
+
+  .wheel span {
+    font-size: 11px;
+  }
+
+  h2 {
+    font-size: 18px !important;
+    margin-top: 120px !important;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -113,15 +148,15 @@
 </div>
 </div>
 <script>
-const options = [{ text: '5% خصم', times: 100, code: 'kiffa981' },
-    { text: 'كوب كفة سيراميك', times: 150, code: 'kiffa962' },
-    { text: 'ربع كيلو بن مكسيكو', times: 15, code: 'kiffa563' },
-    { text: 'ربع كيلو بن سلفادور', times: 15, code: 'kiffa664' },
-    { text: 'اظرف قهوة صغير', times: 15, code: 'kiffa589' },
-    { text: 'مظلة سيارة كفة', times: 50, code: 'kiffa146' },
-    { text: 'مظلة المطر', times: 50, code: 'kiffa807' },
-    { text: 'مق توبل', times: 20, code: 'kiffa809' },
-    { text: 'جرانولا', times: 15, code: 'kiffa917' }];
+const options = [{ text: '5% خصم', times: 100, code: 'kiffa9081' },
+    { text: 'كوب كفة سيراميك', times: 150, code: 'kiffa9602' },
+    { text: 'ربع كيلو بن مكسيكو', times: 15, code: 'kiffa5063' },
+    { text: 'ربع كيلو بن سلفادور', times: 15, code: 'kiffa6064' },
+    { text: 'اظرف قهوة صغير', times: 15, code: 'kiffa5809' },
+    { text: 'مظلة سيارة كفة', times: 50, code: 'kiffa1046' },
+    { text: 'مظلة المطر', times: 50, code: 'kiffa8007' },
+    { text: 'مق توبل', times: 20, code: 'kiffa8099' },
+    { text: 'جرانولا', times: 15, code: 'kiffa9107' }];
 
     let fullList = options.flatMap(opt => Array(opt.times).fill({ text: opt.text, code: opt.code }));
 
@@ -159,7 +194,7 @@ setTimeout(() => {
   prizePopup.style.borderRadius = '20px';
   prizePopup.style.textAlign = 'center';
   prizePopup.style.boxShadow = '0 0 15px rgba(0,0,0,0.2)';
-  prizePopup.innerHTML = `<h2>🎉 ${name} مبارك!</h2><p>ربحت: <strong>${result.text}</strong></p><p>كود هديتك: <strong>${result.code}</strong></p><br><button onclick='this.parentElement.remove()' style='background:#5cc4b9;color:white;padding:10px 20px;border:none;border-radius:10px;'>إغلاق</button>`;
+  prizePopup.innerHTML = `<h2>🎉 ${name} مبروك!</h2><p>ربحت: <strong>${result.text}</strong></p><p>كود هديتك: <strong>${result.code}</strong></p><br><button onclick='this.parentElement.remove()' style='background:#5cc4b9;color:white;padding:10px 20px;border:none;border-radius:10px;'>إغلاق</button>`;
   document.body.appendChild(prizePopup);
 }, 4000); 
 
@@ -169,3 +204,4 @@ setTimeout(() => {
 </script>
 </body>
 </html>
+
