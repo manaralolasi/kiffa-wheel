@@ -1,143 +1,147 @@
 <!DOCTYPE html>
-
 <html dir="rtl" lang="ar">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>عجلة كفة</title>
 <style>
-    body {
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow-x: hidden;
+  body {
+    background-image: url('https://up6.cc/2025/04/174504839882331.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    font-family: 'Frutiger LT Arabic', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-      font-family: 'Frutiger LT Arabic', sans-serif;
-      background-image: url('https://up6.cc/2025/04/174504839882331.png');
-      color: white;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-    }
+  header h2 {
+    margin-top: 40px;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+  }
 
+  .wheel-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+  }
 
-    .logo {
-      height: 80px;
-      margin-bottom: 20px;
-    }
-    .wheel-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .wheel {
-      width: 350px;
-      height: 350px;
-      border-radius: 50%;
-      border: 10px solid #ffffff;
-      position: relative;
-      background: conic-gradient(
-        #4B61B5 0% 11.1%,
-        #5cc4b9 11.1% 22.2%,
-        #FF8ACD 22.2% 33.3%,
-        #4B61B5 33.3% 44.4%,
-        #5cc4b9 44.4% 55.5%,
-        #FF8ACD 55.5% 66.6%,
-        #4B61B5 66.6% 77.7%,
-        #FF8ACD 77.7% 88.8%,
-        #5cc4b9 88.8% 100%
-      );
-      transition: transform 4s ease-out;
-    }
-
-    .wheel span {
-      position: absolute;
-      width: 100%;
-      text-align: center;
-      transform-origin: center bottom;
-      font-size: 12px;
-      font-weight: bold;
-      color: #3EBFBB;
-    }
-    .form-container {
-      background: white;
-      border: 2px solid #3EBFBB;
-      border-radius: 10px;
-      padding: 20px;
-      margin-top: 20px;
-      text-align: center;
-      width: 300px;
-      color: #3EBFBB;
-    }
-    .form-container input {
-      padding: 10px;
-      margin: 5px 0;
-      width: 90%;
-    }
-    .form-container button {
-      background-color: #3EBFBB;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      cursor: pointer;
-      border-radius: 5px;
-      margin-top: 10px;
-    }
-
-@media (max-width: 768px) {
   .wheel {
-    width: 250px;
-    height: 250px;
-  }
-
-  .form-container {
-    width: 90%;
-    padding: 15px;
-  }
-
-  .form-container h3 {
-    font-size: 16px;
-  }
-
-  .form-container input, .form-container button {
-    font-size: 14px;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 10px solid #ffffff;
+    position: relative;
+    background: conic-gradient(
+      #4B61B5 0% 11.1%,
+      #5cc4b9 11.1% 22.2%,
+      #FF8ACD 22.2% 33.3%,
+      #4B61B5 33.3% 44.4%,
+      #5cc4b9 44.4% 55.5%,
+      #FF8ACD 55.5% 66.6%,
+      #4B61B5 66.6% 77.7%,
+      #FF8ACD 77.7% 88.8%,
+      #5cc4b9 88.8% 100%
+    );
+    transition: transform 4s ease-out;
   }
 
   .wheel span {
-    font-size: 11px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    transform-origin: center bottom;
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;
   }
 
-  h2 {
-    font-size: 18px !important;
-    margin-top: 120px !important;
+  .form-container {
+    background: white;
+    border: 2px solid #3EBFBB;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    width: 300px;
+    color: #3EBFBB;
   }
-}
 
+  .form-container input {
+    padding: 10px;
+    margin: 5px 0;
+    width: 90%;
+  }
+
+  .form-container button {
+    background-color: #3EBFBB;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .wheel {
+      width: 250px;
+      height: 250px;
+    }
+
+    header h2 {
+      font-size: 18px;
+      margin-top: 100px;
+    }
+
+    .form-container {
+      width: 90%;
+      padding: 15px;
+    }
+
+    .form-container h3 {
+      font-size: 16px;
+    }
+
+    .form-container input,
+    .form-container button {
+      font-size: 14px;
+    }
+
+    .wheel span {
+      font-size: 11px;
+    }
+  }
 </style>
 </head>
 <body>
 <header>
-<h2 style="margin-top: 200px; margin-bottom: 0px; font-size: 20px; text-align: center;">شاركونا فرحة سنويتنا السابعة</h2>
+<h2>شاركونا فرحة سنويتنا السابعة</h2>
 </header>
-
-<div class="wheel-container" style="margin-top: 30px;">
+<div class="wheel-container">
 <audio id="spin-sound" src="https://cdn.pixabay.com/download/audio/2023/03/06/audio_d11e8b8e34.mp3" preload="auto"></audio>
 <audio id="win-sound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_b6fa4c83c5.mp3" preload="auto"></audio>
-
 <div class="pointer"></div>
 <div class="wheel" id="wheel">
-<span style="left: calc(50% + 95.0px); top: calc(50% + 0.0px); transform: rotate(0.00deg); transform-origin: center center; position: absolute; font-size: 14px; font-weight: bold; color: #ffffff; width: 100px; margin-left: -50px; text-align: center; line-height: 1.3; pointer-events: none;"> %5 خصم</span>
-<span style="left: calc(50% + 71.2px); top: calc(50% + 62.9px); transform: rotate(41.50deg); transform-origin: center center; position: absolute; font-size: 14px; font-weight: bold; color: #ffffff; width: 100px; margin-left: -50px; text-align: center; line-height: 1.3; pointer-events: none;">كوب سيراميك</span>
-<span style="left: calc(50% + 11.6px); top: calc(50% + 94.3px); transform: rotate(83.00deg); transform-origin: center center; position: absolute; font-size: 14px; font-weight: bold; color: #ffffff; width: 100px; margin-left: -50px; text-align: center; line-height: 1.3; pointer-events: none;">ربع كيلو بن مكسيكو</span>
-<span style="left: calc(50% + -59.5px); top: calc(50% + 76.5px); transform: rotate(124.50deg); transform-origin: center center; position: absolute; font-size: 14px; font-weight: bold; color: #ffffff; width: 100px; margin-left: -50px; text-align: center; line-height: 1.3;  pointer-events: none;">ربع كيلو بن سلفادور</span>
-<span style="left: calc(50% + -101.9px); top: calc(50% + 12.4px); transform: rotate(166.00deg); transform-origin: center center; position: absolute; font-size: 14px; font-weight: bold; color: #ffffff; width: 100px; margin-left: -50px; text-align: center; line-height: 1.3; pointer-events: none;">اظرف قهوة صغير</span>
-<span style="left: calc(50% + -84.3px); top: calc(50% + -43.9px); transform: rotate(207.50deg); transform-origin: center center; position: absolute; font-size: 14px; font-weight: bold; color: #ffffff; width: 100px; margin-left: -50px; text-align: center; line-height: 1.3; pointer-events: none;">مظلة سيارة كفة</span>
-<span style="left: calc(50% + -34.0px); top: calc(50% + -88.7px); transform: rotate(249.00deg); transform-origin: center center; position: absolute; font-size: 14px; font-weight: bold; color: #ffffff; width: 100px; margin-left: -50px; text-align: center; line-height: 1.3; pointer-events: none;">مظلة المطر</span>
-<span style="left: calc(50% + 33.3px); top: calc(50% + -89.0px); transform: rotate(290.50deg); transform-origin: center center; position: absolute; font-size: 14px; font-weight: bold; color: #ffffff; width: 100px; margin-left: -50px; text-align: center; line-height: 1.3; pointer-events: none;">مق توبل</span>
-<span style="left: calc(50% + 83.9px); top: calc(50% + -44.6px); transform: rotate(332.00deg); transform-origin: center center; position: absolute; font-size: 14px; font-weight: bold; color: #ffffff; width: 100px; margin-left: -50px; text-align: center; line-height: 1.3; pointer-events: none;">جرانولا</span>
+<span style="left: calc(50% + 95.0px); top: calc(50% + 0.0px); transform: rotate(0.00deg);"> %5 خصم</span>
+<span style="left: calc(50% + 71.2px); top: calc(50% + 62.9px); transform: rotate(41.50deg);">كوب سيراميك</span>
+<span style="left: calc(50% + 11.6px); top: calc(50% + 94.3px); transform: rotate(83.00deg);">ربع كيلو بن مكسيكو</span>
+<span style="left: calc(50% + -59.5px); top: calc(50% + 76.5px); transform: rotate(124.50deg);">ربع كيلو بن سلفادور</span>
+<span style="left: calc(50% + -101.9px); top: calc(50% + 12.4px); transform: rotate(166.00deg);">اظرف قهوة صغير</span>
+<span style="left: calc(50% + -84.3px); top: calc(50% + -43.9px); transform: rotate(207.50deg);">مظلة سيارة كفة</span>
+<span style="left: calc(50% + -34.0px); top: calc(50% + -88.7px); transform: rotate(249.00deg);">مظلة المطر</span>
+<span style="left: calc(50% + 33.3px); top: calc(50% + -89.0px); transform: rotate(290.50deg);">مق توبل</span>
+<span style="left: calc(50% + 83.9px); top: calc(50% + -44.6px); transform: rotate(332.00deg);">جرانولا</span>
 </div>
 <div class="form-container">
 <h3>دخل بياناتك وشوف هديتك  !</h3>
@@ -147,7 +151,7 @@
 </div>
 </div>
 <script>
-const options = [{ text: '5% خصم', times: 100, code: 'kiffa981' },
+const options = [{ text: '%5 خصم', times: 100, code: 'kiffa981' },
     { text: 'كوب كفة سيراميك', times: 150, code: 'kiffa962' },
     { text: 'ربع كيلو بن مكسيكو', times: 15, code: 'kiffa563' },
     { text: 'ربع كيلو بن سلفادور', times: 15, code: 'kiffa664' },
@@ -157,49 +161,49 @@ const options = [{ text: '5% خصم', times: 100, code: 'kiffa981' },
     { text: 'مق توبل', times: 20, code: 'kiffa809' },
     { text: 'جرانولا', times: 15, code: 'kiffa917' }];
 
-    let fullList = options.flatMap(opt => Array(opt.times).fill({ text: opt.text, code: opt.code }));
+let fullList = options.flatMap(opt => Array(opt.times).fill({ text: opt.text, code: opt.code }));
 
-  function spinWheel() {
-    const name = document.getElementById('username').value;
-    const phone = document.getElementById('phone').value;
-    if (!name || !phone) {
-      alert("يرجى إدخال الاسم ورقم الجوال");
-      return;
-    }
-    document.getElementById('spin-sound').play();
-
-    const usedPhones = JSON.parse(localStorage.getItem('usedPhones_v2') || '[]');
-    if (usedPhones.includes(phone)) {
-      alert("لقد قمت بتجربة العجلة مسبقًا. شكراً لمشاركتك!");
-      return;
-    }
-
-    const index = Math.floor(Math.random() * fullList.length);
-    const result = fullList[index];
-    const wheel = document.getElementById('wheel');
-    const angle = 360 * 5 + (index * 40) + 20;
-    wheel.style.transform = `rotate(-${angle}deg)`;
-
-// عرض الجائزة بعد توقف العجلة
-setTimeout(() => {
-  const prizePopup = document.createElement('div');
-  prizePopup.style.position = 'fixed';
-  prizePopup.style.top = '50%';
-  prizePopup.style.left = '50%';
-  prizePopup.style.transform = 'translate(-50%, -50%)';
-  prizePopup.style.background = 'white';
-  prizePopup.style.color = '#5cc4b9';
-  prizePopup.style.padding = '30px';
-  prizePopup.style.borderRadius = '20px';
-  prizePopup.style.textAlign = 'center';
-  prizePopup.style.boxShadow = '0 0 15px rgba(0,0,0,0.2)';
-  prizePopup.innerHTML = `<h2>🎉 ${name} مبارك!</h2><p>ربحت: <strong>${result.text}</strong></p><p>كود هديتك: <strong>${result.code}</strong></p><br><button onclick='this.parentElement.remove()' style='background:#5cc4b9;color:white;padding:10px 20px;border:none;border-radius:10px;'>إغلاق</button>`;
-  document.body.appendChild(prizePopup);
-}, 4000); 
-
-    usedPhones.push(phone);
-    localStorage.setItem('usedPhones_v2', JSON.stringify(usedPhones));
+function spinWheel() {
+  const name = document.getElementById('username').value;
+  const phone = document.getElementById('phone').value;
+  if (!name || !phone) {
+    alert("يرجى إدخال الاسم ورقم الجوال");
+    return;
   }
+
+  document.getElementById('spin-sound').play();
+
+  const usedPhones = JSON.parse(localStorage.getItem('usedPhones_v2') || '[]');
+  if (usedPhones.includes(phone)) {
+    alert("لقد قمت بتجربة العجلة مسبقًا. شكراً لمشاركتك!");
+    return;
+  }
+
+  const index = Math.floor(Math.random() * fullList.length);
+  const result = fullList[index];
+  const wheel = document.getElementById('wheel');
+  const angle = 360 * 5 + (index * 40) + 20;
+  wheel.style.transform = `rotate(-${angle}deg)`;
+
+  setTimeout(() => {
+    const prizePopup = document.createElement('div');
+    prizePopup.style.position = 'fixed';
+    prizePopup.style.top = '50%';
+    prizePopup.style.left = '50%';
+    prizePopup.style.transform = 'translate(-50%, -50%)';
+    prizePopup.style.background = 'white';
+    prizePopup.style.color = '#5cc4b9';
+    prizePopup.style.padding = '30px';
+    prizePopup.style.borderRadius = '20px';
+    prizePopup.style.textAlign = 'center';
+    prizePopup.style.boxShadow = '0 0 15px rgba(0,0,0,0.2)';
+    prizePopup.innerHTML = `<h2>🎉 ${name} مبروك!</h2><p>ربحت: <strong>${result.text}</strong></p><p>كود هديتك: <strong>${result.code}</strong></p><br><button onclick='this.parentElement.remove()' style='background:#5cc4b9;color:white;padding:10px 20px;border:none;border-radius:10px;'>إغلاق</button>`;
+    document.body.appendChild(prizePopup);
+  }, 4000);
+
+  usedPhones.push(phone);
+  localStorage.setItem('usedPhones_v2', JSON.stringify(usedPhones));
+}
 </script>
 </body>
 </html>
